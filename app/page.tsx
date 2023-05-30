@@ -28,11 +28,29 @@ export default function Home() {
       </nav>
 
       <section className="my-10">
-        <Image
-          src={Chef_1}
-          className="object-cover w-full"
-          alt="Carousel_Placeholder_Image"
-        />
+      <div className="w-full carousel">
+          <div className="carousel-item w-full">
+            <Image
+              src={Food_1}
+              className="w-full"
+              alt="Tailwind CSS Carousel component"
+            />
+          </div>
+          <div className="carousel-item w-full">
+            <Image
+              src={Food_2}
+              className="w-full"
+              alt="Tailwind CSS Carousel component"
+            />
+          </div>
+          <div className="carousel-item w-full">
+            <Image
+              src={Food_3}
+              className="w-full"
+              alt="Tailwind CSS Carousel component"
+            />
+          </div>
+        </div>       
 
         <div className="text-center">
           <h2 className="text-2xl mt-16 ">Welcome to Mediterraneo</h2>
@@ -49,13 +67,30 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="my-16">
-        <Image
-          src={Food_1}
-          className="mx-auto object-cover"
-          alt="Carousel_Placeholder_Image"
-        />
-
+      <section className="my-16">    
+      <div className="w-full carousel">
+          <div className="carousel-item w-full">
+            <Image
+              src={Chef_1}
+              className="w-full"
+              alt="Tailwind CSS Carousel component"
+            />
+          </div>
+          <div className="carousel-item w-full">
+            <Image
+              src={Chef_2}
+              className="w-full"
+              alt="Tailwind CSS Carousel component"
+            />
+          </div>
+          <div className="carousel-item w-full">
+            <Image
+              src={Chef_3}
+              className="w-full"
+              alt="Tailwind CSS Carousel component"
+            />
+          </div>
+        </div>
         <div className="text-center">
           <h2 className="text-2xl mt-16 ">At Mediterraneo</h2>
           <p className="text-sm leading-6 mt-5 px-12">
@@ -82,7 +117,12 @@ export default function Home() {
             <li>Mediterraneo.admin@gmail.com</li>
           </ul>
 
-          <Image src={Logo} width={240} className="pt-12 mx-auto" alt="footer_logo" />
+          <Image
+            src={Logo}
+            width={240}
+            className="pt-12 mx-auto"
+            alt="footer_logo"
+          />
         </div>
       </footer>
     </main>
