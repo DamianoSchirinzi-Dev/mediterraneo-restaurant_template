@@ -22,7 +22,7 @@ module.exports = {
     extend: {
       colors: {
         custom_orange: "#F46036",
-        custom_text_black: "#191919",
+        custom_text_black: "#F82C01",
         custom_background_white: "#EDEDED",
       },
       fontFamily: {
