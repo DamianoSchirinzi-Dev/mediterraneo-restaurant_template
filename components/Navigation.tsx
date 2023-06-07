@@ -10,7 +10,7 @@ export default function Navigation() {
           <span className="block h-0.5 w-11 bg-gray-800"></span>
           <span className="block h-0.5 w-11 bg-gray-800"></span>
         </div>       
-        <Image className="w-2/3 sm:w-1/2 lg:w-2/5 object-cover" src={Logo} width={220} alt="NavIcon" />
+        <Image className="w-2/3 sm:w-1/2 lg:w-2/5 2xl:w-1/4 object-cover" src={Logo} width={220} alt="NavIcon" />
         <ul className="hidden md:flex flex-row gap-16 text-lg">
             <li>Book</li>
             <li>Menu</li>

@@ -24,7 +24,7 @@ export default function Home() {
   const imageSet2 = [Lifestyle_1,Lifestyle_2,Lifestyle_3,Lifestyle_4,Lifestyle_5,Lifestyle_6]
 
   return (
-    <main className="font-poppins">     
+    <main className="font-poppins text-custom_text_black">     
 
       <section className="my-11">
         <Carousel imageArr={imageSet1} />
