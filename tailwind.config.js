@@ -30,7 +30,7 @@ module.exports = {
       },
     },
     screens: {
-      'xsm': '40px',
+      'xsm': '340px',
 
       'sm': '640px',
       // => @media (min-width: 640px) { ... }

@@ -2,20 +2,24 @@ import Image from "next/image";
 
 export default function TextBlock(props) {
   return (
-    <div className="md:flex md:flex-row md:pt-14 lg:justify-between 2xl:py-16">
-      <div className="text-center md:text-left md:w-2/3 md:ml-4 2xl:w-2/5 2xl:pl-20 2xl:pt-14">
-        <h2 className="text-xl1 mt-16 md:px-12 md:text-xl1 2xl:text-xl3 2xl:w-4/5 2xl:leading-tight">
+    <div className="md:flex md:flex-row md:justify-between md:align-middle md:py-12 2xl:py-16">
+      <div className="text-center md:text-left md:px-12 md:ml-8 md:w-3/5 lg:pt-12 2xl:pt-24 2xl:w-4/5 2xl:ml-20">
+        <h2 className="text-xl1 mt-16 leading-7 2xl:text-xl3 2xl:leading-tight">
           {props.headingText}
         </h2>
-        <p className="text-base leading-6 mt-5 px-12 md:text-base 2xl:text-lg 2xl:leading-7 2xl:pt-4">
+        <p className="text-base leading-6 mt-7 mx-12 sm:mx-24 md:mx-0 lg:w-4/5 2xl:text-lg 2xl:leading-7 2xl:mt-6">
           {props.bodyText}
         </p>
-        <button className="text-white font-thin bg-custom_orange mt-10 py-3 px-5 md:ml-11 2xl:text-lg 2xl:px-6 2xl:py-2 2xl:mt-10">
+        <button className="text-white font-thin bg-custom_orange mt-10 py-3 px-5 2xl:text-lg 2xl:px-6 2xl:py-2 2xl:mt-10">
           {props.buttonText}
         </button>
       </div>
 
-      <Image className="xsm:hidden md:inline-block lg:w-2/5 lg:object-cover" src={props.BG_Overlay} alt="BG_Overlay" />
+      <Image
+        className="xsm:hidden md:inline-block md:w-4/5 lg:w-3/5 object-cover overflow-hidden"
+        src={props.BG_Overlay}
+        alt="BG_Overlay"
+      />
     </div>
   );
 }

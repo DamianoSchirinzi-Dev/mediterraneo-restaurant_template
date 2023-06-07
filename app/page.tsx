@@ -5,25 +5,28 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import {
   BackgroundOverlay_1,
   BackgroundOverlay_2,
-  Chef_1,
-  Chef_2,
-  Chef_3,
   Food_1,
   Food_2,
   Food_3,
   Food_5,
   Food_6,
+  Lifestyle_1,
+  Lifestyle_2,
+  Lifestyle_3,
+  Lifestyle_4,
+  Lifestyle_5,
+  Lifestyle_6,
   Logo,
 } from "../public/images";
 
 export default function Home() {
   const imageSet1 = [Food_1, Food_2, Food_3, Food_5, Food_6]
-  const imageSet2 = [Chef_1,Chef_2,Chef_3]
+  const imageSet2 = [Lifestyle_1,Lifestyle_2,Lifestyle_3,Lifestyle_4,Lifestyle_5,Lifestyle_6]
 
   return (
     <main className="font-poppins">     
 
-      <section className="my-10">
+      <section className="my-11">
         <Carousel imageArr={imageSet1} />
 
         <TextBlock
@@ -48,14 +51,14 @@ export default function Home() {
           Our family-owned restaurant is committed to providing a warm and
           welcoming atmosphere where guests can relax and savor every bite."
           buttonText="Book a table."
-          BG_Overlay={BackgroundOverlay_1}
+          BG_Overlay={BackgroundOverlay_2}
         />       
       </section>
 
       <footer>
         <div className="text-center mb-14">
           <hr className="h-0.5 border-t-0 bg-black opacity-40 my-12 " />
-          <ul className="text-sm leading-6 mt-5 px-12 md:text-base 2xl:text-lg 2xl:leading-7 2xl:pt-4">
+          <ul className="text-sm leading-6 mt-5 px-12 md:text-base 2xl:text-lg 2xl:leading-7 2xl:mt-8">
             <li>1 Aytoun Street</li>
             <li>Dallas</li>
             <li>Texas</li>

@@ -16,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className="bg-custom_background_white">
+      <body className={inter.className} >
         <Hydrate>
           <Navigation />
           {children}
