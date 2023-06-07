@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function TextBlock(props) {
+export default function TextBlock(props : any) {
   return (
     <div className="md:flex md:flex-row md:justify-between md:align-middle md:py-12 2xl:py-16">
       <div className="text-center md:text-left md:px-12 md:ml-8 md:w-3/5 lg:pt-12 2xl:pt-24 2xl:w-4/5 2xl:ml-20">

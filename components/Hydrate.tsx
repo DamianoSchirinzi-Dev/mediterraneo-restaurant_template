@@ -8,7 +8,7 @@ export default function Hydrate({children}: {children: ReactNode}){
     //Wait till Nextjs rehydration is complete
     useEffect(() => {
         setIsHydrated(true)
-    })   
+    }, [])   
 
     return (
         <>
