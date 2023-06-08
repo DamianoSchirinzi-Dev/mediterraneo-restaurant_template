@@ -7,7 +7,7 @@ export default function Navigation() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div className="font-poppins text-lg flex flex-row items-center justify-between pt-10 px-10 md:flex-col md:justify-center">
+    <div className="font-poppins text-custom_text_black text-lg flex flex-row items-center justify-between pt-10 px-10 md:flex-col md:justify-center">
       <a href="/">
         <Image
           className="w-2/3 lg:w-4/5 object-cover md:m-auto md:pb-6"
