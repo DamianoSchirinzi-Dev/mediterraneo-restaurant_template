@@ -20,7 +20,7 @@ import {
 } from "../public/images";
 
 export default function Home() {
-  const imageSet1 = [Food_1, Food_2, Food_3, Food_5, Food_6]
+  const imageSet1 = [Food_5, Food_6, Food_1, Food_2, Food_3]
   const imageSet2 = [Lifestyle_1,Lifestyle_2,Lifestyle_3,Lifestyle_4,Lifestyle_5,Lifestyle_6]
 
   return (
@@ -56,9 +56,8 @@ export default function Home() {
       </section>
 
       <footer>
-        <div className="text-center mb-14">
-          <hr className="h-0.5 border-t-0 bg-black opacity-40 my-12 " />
-          <ul className="text-sm leading-6 mt-5 px-12 md:text-base 2xl:text-lg 2xl:leading-7 2xl:mt-8">
+        <div className="text-center mb-14 border-t border-gray-700">
+          <ul className="text-sm leading-6 mt-5 px-12 md:text-base 2xl:text-lg 2xl:leading-7 2xl:mt-16">
             <li>1 Aytoun Street</li>
             <li>Dallas</li>
             <li>Texas</li>

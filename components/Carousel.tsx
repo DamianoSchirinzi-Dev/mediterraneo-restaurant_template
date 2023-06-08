@@ -6,7 +6,7 @@ export default function Carousel({imageArr}: {imageArr: StaticImageData[]}) {
       {imageArr.map((imageSrc: StaticImageData) => {
         return (
           <div className="w-full carousel-item sm:w-1/2 lg:w-1/3" key={imageSrc.src}>
-            <Image src={imageSrc} className="w-auto object-cover" alt="Carousel Item" />
+            <Image src={imageSrc} className="w-auto object-cover" alt="Carousel Item" placeholder="blur"/>
           </div>
         );
       })}
