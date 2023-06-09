@@ -35,6 +35,7 @@ export default function Home() {
             of the Mediterranean."
           buttonText="See the menu"
           BG_Overlay={BackgroundOverlay_1}
+          hideButton={true}
         />
       </section>
 
@@ -49,6 +50,7 @@ export default function Home() {
           welcoming atmosphere where guests can relax and savor every bite."
           buttonText="Book a table."
           BG_Overlay={BackgroundOverlay_2}
+          hideButton={true}
         />       
       </section>  
     </main>

@@ -10,7 +10,7 @@ export default function Navigation() {
     <div className="flex flex-row items-center justify-between px-10 pt-10 text-lg font-poppins text-custom_text_black md:flex-col md:justify-center">
       <a href="/">
         <Image
-          className="object-cover w-2/3 lg:w-4/5 md:m-auto md:pb-6"
+          className="object-cover w-4/5 lg:w-5/6 md:m-auto md:pb-6"
           src={Logo}
           width={220}
           alt="NavIcon"
@@ -22,12 +22,12 @@ export default function Navigation() {
             className="space-y-2 HAMBURGER-ICON"
             onClick={() => setIsNavOpen((prev) => !prev)}
           >
-            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+            <span className="block h-0.5 w-8 animate-pulse bg-black"></span>
+            <span className="block h-0.5 w-8 animate-pulse bg-black"></span>
+            <span className="block h-0.5 w-8 animate-pulse bg-black"></span>
           </div>
 
-          <div className= {`${isNavOpen ? "showMenuNav" : "hideMenuNav"}`} >
+          <div className={`${isNavOpen ? "showMenuNav" : "hideMenuNav"}`}>
             <div
               className="absolute top-0 right-0 px-10 pt-14"
               onClick={() => setIsNavOpen(false)}
@@ -47,16 +47,18 @@ export default function Navigation() {
             </div>
             <ul className="flex flex-col items-center justify-between min-h-[250px]">
               <li className="my-8 uppercase border-b border-gray-400">
-                <a href="/book">Book</a>
+                <a href="/about">About</a>
               </li>
               <li className="my-8 uppercase border-b border-gray-400">
-                <a href="/menu">Menu</a>
+                <a
+                  href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+                  target="blank"
+                >
+                  Menu
+                </a>
               </li>
               <li className="my-8 uppercase border-b border-gray-400">
                 <a href="/contact">Contact</a>
-              </li>
-              <li className="my-8 uppercase border-b border-gray-400">
-                <a href="/about">About</a>
               </li>
             </ul>
           </div>
@@ -64,13 +66,15 @@ export default function Navigation() {
 
         <ul className="hidden DESKTOP-MENU space-x-14 md:flex">
           <li>
-            <a href="/book">Book</a>
+            <a href="/about">About</a>
           </li>
           <li>
-            <a href="/menu">Menu</a>
-          </li>
-          <li>
-            <a href="/portfolio">Portfolio</a>
+            <a
+              href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+              target="blank"
+            >
+              Menu
+            </a>
           </li>
           <li>
             <a href="/contact">Contact</a>
