@@ -22,7 +22,7 @@ export default function Home() {
 
   return (
     <div>
-      <section className="my-11">       
+      <section className="my-11 font-poppins text-custom_text_black">       
         <Carousel imageArr={imageSet2} />
         <TextBlock
           headingText="About us"

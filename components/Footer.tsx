@@ -4,7 +4,7 @@ import Logo from "@/public/images/MediterraneoLogo.png";
 export default function Footer() {
   return (
     <footer>
-      <div className="text-center border-t border-gray-700 mb-14">
+      <div className="text-center border-t border-gray-700 mb-14 font-poppins text-custom_text_black">
         <ul className="px-12 mt-12 text-sm leading-6 md:text-base 2xl:text-lg 2xl:leading-7 md:mt-20">
           <li>1 Aytoun Street</li>
           <li>Dallas</li>
