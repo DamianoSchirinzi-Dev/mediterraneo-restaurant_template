@@ -7,19 +7,19 @@ export default function Navigation() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div className="font-poppins text-custom_text_black text-lg flex flex-row items-center justify-between pt-10 px-10 md:flex-col md:justify-center">
+    <div className="flex flex-row items-center justify-between px-10 pt-10 text-lg font-poppins text-custom_text_black md:flex-col md:justify-center">
       <a href="/">
         <Image
-          className="w-2/3 lg:w-4/5 object-cover md:m-auto md:pb-6"
+          className="object-cover w-2/3 lg:w-4/5 md:m-auto md:pb-6"
           src={Logo}
           width={220}
           alt="NavIcon"
         />
       </a>
       <nav>
-        <section className="MOBILE-MENU flex md:hidden">
+        <section className="flex MOBILE-MENU md:hidden">
           <div
-            className="HAMBURGER-ICON space-y-2"
+            className="space-y-2 HAMBURGER-ICON"
             onClick={() => setIsNavOpen((prev) => !prev)}
           >
             <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
@@ -33,7 +33,7 @@ export default function Navigation() {
               onClick={() => setIsNavOpen(false)}
             >
               <svg
-                className="h-8 w-8 text-gray-600"
+                className="w-8 h-8 text-gray-600"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -46,23 +46,23 @@ export default function Navigation() {
               </svg>
             </div>
             <ul className="flex flex-col items-center justify-between min-h-[250px]">
-              <li className="border-b border-gray-400 my-8 uppercase">
+              <li className="my-8 uppercase border-b border-gray-400">
                 <a href="/book">Book</a>
               </li>
-              <li className="border-b border-gray-400 my-8 uppercase">
+              <li className="my-8 uppercase border-b border-gray-400">
                 <a href="/menu">Menu</a>
               </li>
-              <li className="border-b border-gray-400 my-8 uppercase">
+              <li className="my-8 uppercase border-b border-gray-400">
                 <a href="/contact">Contact</a>
               </li>
-              <li className="border-b border-gray-400 my-8 uppercase">
+              <li className="my-8 uppercase border-b border-gray-400">
                 <a href="/about">About</a>
               </li>
             </ul>
           </div>
         </section>
 
-        <ul className="DESKTOP-MENU hidden space-x-14 md:flex">
+        <ul className="hidden DESKTOP-MENU space-x-14 md:flex">
           <li>
             <a href="/book">Book</a>
           </li>
@@ -83,9 +83,9 @@ export default function Navigation() {
       }
       .showMenuNav {
         display: block;
-        position: absolute;
+        position: fixed;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         top: 0;
         left: 0;
         background: white;

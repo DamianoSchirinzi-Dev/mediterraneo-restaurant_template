@@ -1,7 +1,5 @@
-import Image from "next/image";
 import Carousel from "@/components/Carousel";
 import TextBlock from "@/components/TextBlock";
-import { RxHamburgerMenu } from "react-icons/rx";
 import {
   BackgroundOverlay_1,
   BackgroundOverlay_2,
@@ -16,7 +14,6 @@ import {
   Lifestyle_4,
   Lifestyle_5,
   Lifestyle_6,
-  Logo,
 } from "../public/images";
 
 export default function Home() {
@@ -53,27 +50,7 @@ export default function Home() {
           buttonText="Book a table."
           BG_Overlay={BackgroundOverlay_2}
         />       
-      </section>
-
-      <footer>
-        <div className="text-center mb-14 border-t border-gray-700">
-          <ul className="text-sm leading-6 mt-5 px-12 md:text-base 2xl:text-lg 2xl:leading-7 2xl:mt-16">
-            <li>1 Aytoun Street</li>
-            <li>Dallas</li>
-            <li>Texas</li>
-            <li>PXY 10TB</li>
-            <li>+07884601102</li>
-            <li>Mediterraneo.admin@gmail.com</li>
-          </ul>
-
-          <Image
-            src={Logo}
-            width={240}
-            className="pt-12 mx-auto"
-            alt="footer_logo"
-          />
-        </div>
-      </footer>
+      </section>  
     </main>
   );
 }

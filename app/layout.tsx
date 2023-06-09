@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Navigation from "@/components/Navigation";
-import Hydrate from "@/components/Hydrate";
+import Footer from "../components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,12 +16,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="bg-custom_background_white">
-      <body className={inter.className} >
-        <Hydrate>
-          <Navigation />
-          {children}
-        </Hydrate>
+    <html lang="en" className="bg-custom_background_white ">
+      <body className={`${inter.className}`}>
+        <Navigation />
+        {children}
+        <Footer />
       </body>
     </html>
   );
